@@ -431,14 +431,139 @@ if (rating.match(/\d/)) {
 }
 */
 
-// PART 5:
+// PART 5: "Coin Flip Game"
 
+/*
 // STEP 1. Begin your application by creating a variable called coinFlip and set it equal to a random number. You will have to use a Math method to get this number.
 
+var coinFlip;
+// coinFlip = Math.random();
+
+// STEP 2. Prompt the user to select “Heads or Tails” and set the result to a new variable called choice.
+
+var choice = prompt("Heads or Tails");
+
+// STEP 3. Use a conditional to check the result of the coin flip. If it’s less than a certain number, it will be heads. If it’s greater than a certain number, it will be tails. 
+
+var result;
+
+if (coinFlip < 0.5) {
+    result = "heads";
+} else {
+    result = "tails";
+}
+
+// STEP 4. If the result is heads and the user selects heads, display the following message within an alert: The flip was heads and you chose heads...you win!
+
+choice = choice.toLowerCase();
+
+if (choice === "heads" && result === "heads") {
+    alert("The flip was heads and you chose heads...you win!");
+}
+
+// STEP 5. If the result is heads and the user selects tails, display the following message within an alert: The flip was heads but you chose tails...you lose!
+    
+if (choice === "tails" && result === "heads") {
+    alert("The flip was heads but you chose tails...you lose!");
+}
+
+// STEP 6. If the result is tails and the user selects heads, display the following message within an alert: The flip was tails but you chose heads...you lose!
+
+if (choice === "heads" && result === "tails") {
+    alert("The flip was tails but you chose heads...you lose!");
+}
+    
+// STEP 7. If the result is tails and the user selects tails, display the following message within an alert: The flip was tails and you chose tails...you win!
+
+if (choice === "tails" && result === "tails") {
+    alert("The flip was tails and you chose tails...you win!");
+}
+    
+// STEP 8. Use two Math methods to get a solid whole number on the coin flip. Modify the evaluation of the expression in your conditional so that it now checks for a Boolean result.
+
+coinFlip = Math.round(Math.random());
+
+if (coinFlip === false) {
+    result = "heads";
+} else {
+    result = "tails";
+}
+
+*/
+
+/*
+// PART 6: "The Coin Flip Game Redux"
+
+// STEP 1. Begin your application by declaring a variable called coinFlip. Do not assign the variable a number just yet.
+
+var coinFlip;
+
+// STEP 2. Create a for loop that loops 10 times.
+
+//for (var i = 0; i < 10; i++) {
+//    console.log(i);
+//}
+
+// STEP 3. Within the for loop assign a randomly generated number to coinFlip. You will have to use a Math method to get this number. Also, make sure to round that number off so that you get either a 0 or 1 as the result.
+
+//for (var i = 0; i < 10; i++) {
+//    coinFlip = Math.round(Math.random());
+//}
+
+// STEP 4. Use a conditional to check the result of the coin flip. If it’s 0, write out “Heads” into the console window. If it’s 1, write out “Tails” into the console window. 
+
+for (var i = 0; i < 10; i++) {
+    coinFlip = Math.round(Math.random());
+    
+    if (coinFlip === 0) {
+        console.log("Heads");
+    } else {
+        console.log("Tails");
+    }
+}
+*/
+
+// PART 7: "The Coin Flip Streak Game"
+
+/*
+// STEP 1. Begin your application by declaring a variable called coinFlip. Do not assign the variable a number just yet.
+// STEP 2. Create a do while loop.
+// STEP 3. Within the do while loop assign a randomly generated number to coinFlip. You will have to use a Math method to get this number. Also, make sure to round that number off so that you get either a 0 or 1 as the result.
+// STEP 4. Use a conditional to check the result of the coin flip. If it’s 0, write out “Heads” into the console window. If it’s 1, write out “Tails” into the console window. 
+// STEP 5. Set the condition of the do while loop to end once the coinFlip becomes “Tails”.
+
+var coinFlip;
+do {
+    coinFlip = Math.round(Math.random());
+    (coinFlip === 0) ? console.log("Heads") : console.log("Tails");
+} while (coinFlip === 0);
+*/
+
+// PART 8: "Looping a Triangle"
+
+/*
+Write a loop that displays the following triangle within a console window:
+#
+##
+###
+####
+#####
+######
+#######
 
 
+for (var i= 1; i < 8; i++) {
+    var f = "#######";
+    console.log(f.substring(0, i));
+}
+*/
 
+// PART 9: Odd or Even?
 
+/*
+// Write a loop that will iterate from 0 to 15. For each iteration it will check if the current number is odd or even, and display a message in the console window. 
 
-
-
+for (i = 0; i < 16; i++) {
+    (i % 2 === 0) ? (console.log(i + " is even")) : (console.log(i + " is odd"));
+}
+*/
